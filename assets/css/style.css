@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+  font-family: 'Lora', Arial, sans-serif;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+header {
+  background-color: rgb(243, 185, 219);
+  text-align: center;
+  padding: 40px;
+}
+
+.foto-perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+#toggle-tema {
+  background-color: rgb(236, 124, 188);
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+#toggle-tema:hover {
+  background-color: rgb(247, 162, 214);
+}
+
+main {
+  flex: 1;
+  padding: 48px 38px;
+}
+
+section {
+  background-color: rgb(243, 185, 219);
+  width: 80%;
+  margin: 0 auto 40px;
+  padding: 40px;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+li {
+  background-color: rgb(247, 162, 214);
+  padding: 10px 15px;
+  border-left: 4px solid #000;
+  border-radius: 12px;
+  font-size: 16px;
+  min-width: 180px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  transform: translateX(5px);
+  background-color: rgb(236, 124, 188);
+  color: #000;
+}
+
+#contato a {
+  color: rgb(236, 124, 188);
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid rgb(236, 124, 188);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+#contato a:hover {
+  background-color: #000;
+  color: rgb(250, 226, 241);
+}
+
+footer {
+  background-color: rgb(243, 185, 219);
+  text-align: center;
+  padding: 1.2rem;
+}
