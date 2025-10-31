@@ -1,12 +1,16 @@
-const botaoTema = document.getElementById('toggle-tema');
+const botao = document.getElementById("toggle-tema");
+const titulo = document.getElementById("titulo");
 const body = document.body;
 
-botaoTema.addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
-
-  if (body.classList.contains('dark-mode')) {
-    botaoTema.textContent = '☀️ Modo Claro';
+botao.addEventListener("click", () => {
+  // Verifica se o modo escuro está ativo
+  if (body.classList.contains("dark-mode")) {
+    body.classList.remove("dark-mode");
+    titulo.textContent = "Modo claro 🌙";
+    botao.textContent = "Ativar modo escuro";
   } else {
-    botaoTema.textContent = '🌙 Modo Escuro';
+    body.classList.add("dark-mode");
+    titulo.textContent = "Modo escuro ☀️";
+    botao.textContent = "Ativar modo claro";
   }
 });

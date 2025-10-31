@@ -7,11 +7,11 @@
   box-sizing: border-box;
 }
 
-/* Estilos gerais */
+/* Modo claro */
 body {
   font-family: 'Lora', Arial, sans-serif;
-  background-color: black;
-  color: white;
+  background-color: rgb(250, 226, 241);
+  color: #000;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -108,4 +108,51 @@ footer {
   background-color: rgb(243, 185, 219);
   text-align: center;
   padding: 1.2rem;
+}
+
+/* 🌙 Modo escuro */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.dark-mode header {
+  background-color: #333;
+}
+
+.dark-mode #toggle-tema {
+  background-color: #ff7ac9;
+  color: #fff;
+}
+
+.dark-mode #toggle-tema:hover {
+  background-color: #444;
+}
+
+.dark-mode section {
+  background-color: #333;
+}
+
+.dark-mode li {
+  background-color: #444;
+  border-left: 4px solid #fff;
+}
+
+.dark-mode li:hover {
+  background-color: #ff7ac9;
+  color: #fff;
+}
+
+.dark-mode #contato a {
+  color: #ff7ac9;
+  border: 2px solid #ff7ac9;
+}
+
+.dark-mode #contato a:hover {
+  background-color: #fff;
+  color: #1e1e1e;
+}
+
+.dark-mode footer {
+  background-color: #333;
 }

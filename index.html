@@ -6,15 +6,15 @@
   <title>Luana Follegati - Página Pessoal</title>
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
   <header>
-    <img src="./assets/img/foto-perfil.jpg" alt="Foto de Luana" class="foto-perfil">
     <h1>Luana Follegati</h1>
     <p>Estudante de Desenvolvimento de Sistemas</p>
 
     <!-- Botão de alternância de tema -->
     <button id="toggle-tema" aria-label="Alternar entre modo claro e escuro">
-      🌙 Modo Escuro
+      🌙 Ativar modo escuro
     </button>
   </header>
 
@@ -38,15 +38,29 @@
     <section id="contato">
       <h3>Entre em contato</h3>
       <p>Quer conversar sobre tecnologia? Me encontre no 
-        <a href="https://github.com/Luanafollegati" target="_blank">GitHub</a> ou no Instagram 😊
+        <a href="https://github.com/Luanafollegati" target="_blank">GitHub</a> 
+        ou no Instagram 😊
       </p>
     </section>
   </main>
 
   <footer>
-    <p>2025 © Luana Follegati - Página pessoal </p>
+    <p>2025 © Luana Follegati - Página pessoal 🌸</p>
   </footer>
 
-  <script src="./assets/js/script.js"></script>
+  <script>
+    const botao = document.getElementById("toggle-tema");
+    const body = document.body;
+
+    botao.addEventListener("click", () => {
+      if (body.classList.contains("dark-mode")) {
+        body.classList.remove("dark-mode");
+        botao.textContent = "🌙 Ativar modo escuro";
+      } else {
+        body.classList.add("dark-mode");
+        botao.textContent = "☀️ Ativar modo claro";
+      }
+    });
+  </script>
 </body>
 </html>
